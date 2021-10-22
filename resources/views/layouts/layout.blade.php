@@ -33,6 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" href="/categories">Categories</a>
+                        <a class="nav-link" href="/products">Products</a>
                     </div>
                 </div>
             </div>
