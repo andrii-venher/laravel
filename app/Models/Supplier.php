@@ -13,4 +13,9 @@ class Supplier extends Model
     {
         return $this->belongsTo(Address::class);
     }
+
+    public function deliveries()
+    {
+        return $this->hasMany(Delivery::class);
+    }
 }

@@ -19,13 +19,23 @@ class Product extends Model
         return $this->belongsTo(Producer::class);
     }
 
-    public function Unit()
+    public function unit()
     {
         return $this->belongsTo(Unit::class);
     }
 
-    public function Discount()
+    public function discount()
     {
         return $this->belongsTo(Discount::class);
+    }
+
+    public function deliveries()
+    {
+        return $this->hasMany(Delivery::class);
+    }
+
+    public function sales()
+    {
+        return $this->hasMany(Sale::class);
     }
 }
