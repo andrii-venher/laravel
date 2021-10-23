@@ -9,8 +9,13 @@ class Sale extends Model
 {
     use HasFactory;
 
-    public function sale()
+    public function product()
     {
         return $this->belongsTo(Product::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }
