@@ -13,4 +13,14 @@ class Address extends Model
     {
         return $this->belongsTo(City::class);
     }
+
+    public function producers()
+    {
+        return $this->hasMany(Producer::class);
+    }
+
+    public function suppliers()
+    {
+        return $this->hasMany(Supplier::class);
+    }
 }
