@@ -13,4 +13,19 @@ class Product extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function producer()
+    {
+        return $this->belongsTo(Producer::class);
+    }
+
+    public function Unit()
+    {
+        return $this->belongsTo(Unit::class);
+    }
+
+    public function Discount()
+    {
+        return $this->belongsTo(Discount::class);
+    }
 }

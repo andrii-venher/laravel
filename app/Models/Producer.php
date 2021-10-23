@@ -13,4 +13,9 @@ class Producer extends Model
     {
         return $this->belongsTo(Address::class);
     }
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
 }
